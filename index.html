@@ -31,29 +31,29 @@
     margin: 0 auto; 
     overflow: hidden; 
   } 
+  
+  
+  article {
+    float: center;
+    width: 70%;
+    background-color: #C97D7D; 
+  }
 
   /* Create two columns/boxes that floats next to each other */
   nav {
     float: top;
     width: 30%;
-    height: 300px; /* only for demonstration, should be removed */
-    background: #ccc;
+    background: #FFFFFF;
     padding: 20px;
+    display: flex;
   }
 
   /* Style the list inside the menu */
-  #item {
+  .item {
     list-style-type: none;
     padding: 0;
   }
 
-  article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: #C97D7D; 
-    height: 300px; /* only for demonstration, should be removed */
-  }
 
   /* Clear floats after the columns */
   section:after {
@@ -77,6 +77,13 @@
       height: auto;
     }
   }
+  
+  #selection_img{
+    height:300;
+    width:280;
+  }
+  
+  
 </style>
 </head>
 <body>
@@ -107,15 +114,15 @@
   <nav>
     <div class="item">
       <a href="#">Twitter</a>
-      <img src="images/apple.png" alt="apple" width="300" height="280">  
+      <img id="selection_img" src="images/apple.png" alt="apple">  
     </div>
     <div class="item">
       <a href="#">Ibis Paint</a>
-      <img src="images/apple.png" alt="apple" width="300" height="280"> 
+      <img id="selection_img" src="images/apple.png" alt="apple"> 
     </div>
     <div class="item">
       <a href="/page2">Go to page 2</a>
-      <img src="images/apple.png" alt="apple" width="300" height="280"> 
+      <img id="selection_img" src="images/apple.png" alt="apple"> 
     </div>
    </nav>
  </section>
