@@ -20,6 +20,16 @@
     font-size: 35px;
     color: white;
   }
+ 
+  .menu {    
+    position: sticky; 
+    top: 0; 
+    background-color: #009900; 
+    padding:10px 0px 10px 0px; 
+    color:white; 
+    margin: 0 auto; 
+    overflow: hidden; 
+  } 
 
   /* Create two columns/boxes that floats next to each other */
   nav {
@@ -69,15 +79,22 @@
 </style>
 </head>
 <body>
+ <header>
+  <h1>Jakob-kun's Website</h1>
+  <h2>Art and Comics</h2>
+ </header>
   
-<h1>Jakob-kun's Website</h1>
-<h1>Insert main website picture here</h1>
-  
-<header>
-  <h2>Comics</h2>
-</header>
-  
-<section>
+ <div class="menu"> 
+   <a href="#home">HOME</a> 
+   <a href="#news">NEWS</a> 
+   <a href="#notification">NOTIFICATIONS</a> 
+   <div class="menu-log"> 
+       <a href="#login">LOGIN</a> 
+   </div> 
+ </div> 
+ 
+ 
+ <section>
    <nav>
     <ul>
       <li><a href="#">Twitter</a></li>
@@ -92,11 +109,11 @@
     <button onclick="location.href='https://google.com'">To google</button>
   </article>
 
-</section>
+ </section>
   
-<footer>
-  <p>Twitter and other account links</p>
-</footer>  
+ <footer>
+   <p>Twitter and other account links</p>
+ </footer>  
 </body>
 </html>
 
